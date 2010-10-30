@@ -1,0 +1,16 @@
+h1. Simple Textile
+
+*Simple Textile* is a simple plugin for WordPress that converts posts to Textile.
+
+h2. Usage
+
+Write a post in Textile, and add a custom field called "textile". The contents can be anything as long as they aren't blank.
+
+Disable the visual editor from your user's preferences.
+
+h3. To-do
+
+* Friendlier UI to enable Textile in a post
+* Bold, italic shortcuts in editor, etc.
+* Release in WordPress.org for one-click install in dashboard
+* Options screen?
