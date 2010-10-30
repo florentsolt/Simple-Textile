@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Textile
-Plugin URI: http://github.com/rojekti/simpleTextile/
+Plugin URI: http://github.com/rojekti/Simple-Textile/
 Description: Simple Textile processing for posts with no BS. Uses the PHP Textile library by Dean Allen.
 Version: 0.1
 Author: rojekti
