@@ -10,7 +10,6 @@ Disable the visual editor from your user's preferences.
 
 h3. To-do
 
-* Friendlier UI to enable Textile in a post
 * Bold, italic shortcuts in editor, etc.
 * Release in WordPress.org for one-click install in dashboard
 * Options screen?
