@@ -17,18 +17,18 @@ function simpletextile_filter($content) {
 	$toggle = get_post_meta($post, "textile", true);
 	
 	if (!empty($toggle)) {
+		remove_filter("the_content", "wpautop");
+		remove_filter("the_content", "wptexturize");
+		remove_filter("the_excerpt", "wpautop");
+		remove_filter("the_excerpt", "wptexturize");
 		$textile = new Textile();
 		return $textile->TextileThis($content);
 	}
+		
 	
 	return $content;
 
 }
-
-remove_filter("the_content", "wpautop");
-remove_filter("the_content", "wptexturize");
-remove_filter("the_excerpt", "wpautop");
-remove_filter("the_excerpt", "wptexturize");
 
 add_filter("the_content", "simpletextile_filter", 0);
 
