@@ -32,6 +32,7 @@ function simpletextile_filter($content) {
 
 function simpletextile_meta() {
 	add_meta_box("simpletextile_textilize", "Textile processing", "simpletextile_render_meta", "post", "normal", "high", get_the_ID());
+	add_meta_box("simpletextile_textilize", "Textile processing", "simpletextile_render_meta", "page", "normal", "high", get_the_ID());
 }
 
 function simpletextile_render_meta($post, $metabox) {
