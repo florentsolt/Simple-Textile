@@ -17,14 +17,14 @@ function simpletextile_filter($content) {
 	$toggle = get_post_meta($post, "textile", true);
 	
 	if (!empty($toggle)) {
-		remove_filter("the_content", "wpautop");
-		remove_filter("the_content", "wptexturize");
-		remove_filter("the_excerpt", "wpautop");
-		remove_filter("the_excerpt", "wptexturize");
 		$textile = new Textile();
 		return $textile->TextileThis($content);
+	} else {
+		add_filter("the_content", "wpautop");
+		add_filter("the_content", "wptexturize");
+		add_filter("the_excerpt", "wpautop");
+		add_filter("the_excerpt", "wptexturize");
 	}
-		
 	
 	return $content;
 
@@ -76,6 +76,10 @@ function simpletextile_render($template, $variables = array()) {
 	return $contents;
 }
 
+remove_filter("the_content", "wpautop");
+remove_filter("the_content", "wptexturize");
+remove_filter("the_excerpt", "wpautop");
+remove_filter("the_excerpt", "wptexturize");
 add_filter("the_content", "simpletextile_filter", 0);
 add_action("add_meta_boxes", "simpletextile_meta");
 add_action("save_post", "simpletextile_save_meta");
