@@ -1,0 +1,17 @@
+﻿*Simple Textile* is a small "WordPress":http://wordpress.org plugin for writing posts and pages in "Textile":http://en.wikipedia.org/wiki/Textile_(markup_language).
+
+h2. Installation & Usage
+
+You can install Simple Textile by either uploading the plugin in a directory to @wp-content/plugins@, or by downloading it through the WordPress admin dashboard. In order to have a post or page processed in Textile, tick the "Process this post using Textile" checkbox below the editor.
+
+(This adds a new custom field called "textile" to the entry. If an entry has the "textile" field filled with any text, it will be parsed as Textile instead of HTML.)
+
+If you want to write all your posts using Textile, you might want to disable the visual editor from your user's preferences page.
+
+h2. About
+
+Written by "Veeti Paananen":http://tuntis.net. If you need any help, send an e-mail to "contact@rojekti.fi":mailto:contact@rojekti.fi.
+
+h2. License
+
+This plugin is licensed under the GNU General Public License, version 2.
