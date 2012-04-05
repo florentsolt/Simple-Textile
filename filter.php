@@ -5,7 +5,7 @@ function simpletextile_filter($content) {
 	$post = get_the_ID();
 	$toggle = get_post_meta($post, "textile", true);
 	
-	if (!empty($toggle)) {
+	if (!empty($toggle) && $toggle == 'true') {
 		$textile = new Textile();
 		return $textile->TextileThis($content);
 	} else {
